@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practicing div</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* Full viewport height */
+            margin: 0;
+            padding: 0;
+            background-color: #ffffffce;
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40vh;
+            width: 60vw;
+            background-color: #ffffff;
+            border: 2px solid rgba(231, 222, 222, 0.568);
+            border-radius: 5px;
+            max-width: 600px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        label,
+        input {
+            display: block;
+            margin: 10px;
+
+        }
+
+        label {
+            font-size: 200%;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-style: normal;
+            text-transform: capitalize;
+        }
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;}
+
+        input {
+            font-size: 100%;
+            padding: 10px;
+            width: 80%;
+            border-left: none;
+            border-right: none;
+            border-top: none;
+            ;
+        }
+
+        input[type="submit"] {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 50%;
+            border-bottom: none;
+
+            margin-top: 10%;
+        }
+
+        h1 {
+            display: flex;
+            justify-content: center;
+
+            text-align: center;
+            font-size: 300%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-style: normal;
+            text-transform: capitalize;
+        }
+
+        input::placeholder {
+            font-size: 100%;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-style: normal;
+            text-transform: capitalize;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form>
+            <h1>login</h1>
+            <input type="text" name="username" placeholder="USERNAME">
+
+            <input type="password" name="password" placeholder="PASSWORD">
+            <input type="submit" value="submit">
+        </form>
+
+
+    </div>
+</body>
+
+</html>
